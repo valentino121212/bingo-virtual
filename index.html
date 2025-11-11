@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bingo Virtual</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎉 Bingo Virtual 🎙️</h1>
+
+  <div id="login-screen" class="screen">
+    <h2>Iniciar Sesión</h2>
+    <input id="username" placeholder="Nombre de usuario" />
+    <button id="login-btn">Entrar</button>
+    <button id="guest-btn">Entrar como invitado</button>
+  </div>
+
+  <div id="game-screen" class="screen hidden">
+    <div class="top-bar">
+      <h2 id="welcome"></h2>
+      <button id="mute-btn">🔇 Silenciar micrófono</button>
+    </div>
+
+    <div id="board"></div>
+
+    <div class="controls">
+      <button id="reset-btn">🔄 Nueva partida</button>
+      <audio id="ding" src="https://actions.google.com/sounds/v1/alarms/digital_watch_alarm_long.ogg"></audio>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
